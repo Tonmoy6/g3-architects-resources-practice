@@ -266,9 +266,18 @@ Responsive for mobile
     nav,
     .team-container,
     .facts-card-container,
-    .sponsor-image-container {
+    .sponsor-image-container,
+    .features {
         flex-direction: column;
 
+    }
+    .features-image img{
+        width: 100%;
+        margin-left: 0;
+    }
+    .ten-years{
+        position: static;
+        max-width: 350px;
     }
 
     #sponsor-image-container {
@@ -288,6 +297,12 @@ Responsive for mobile
     .facts-card-container {
         gap: 20px;
     }
+    .footer{
+        font-size: medium;
+        margin: 0;
+        padding: 30px 0px;
+
+    }
 }
 
 /* =========================
@@ -300,7 +315,27 @@ Tablet styles
 
     nav,
     .team-container,
-    .sponsor-image-container {
+    .features  {
         flex-direction: column;
+    }
+    .sponsor-image-container{
+        display:grid ;
+        grid-template-columns: repeat(1fr);
+        gap: 30px;
+    }
+    .facts-card-container{
+        display: grid;
+        grid-template-columns: repeat(1fr);
+    }
+    .ten-years{
+        position: relative;
+        left: 180px;
+        top: 30px;
+    }
+    .footer{
+        font-size: medium;
+        margin: 0;
+        padding: 30px 0px;
+
     }
 }
