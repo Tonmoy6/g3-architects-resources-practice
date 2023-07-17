@@ -23,7 +23,12 @@ header{
     background: rgba(255, 144, 14, 0.10);
     padding: 50px 180px;
 }
-
+.section-title {
+    color: #131313;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: normal;
+}
 
 /* =====================
 Navigation style
@@ -33,12 +38,7 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
-.nav-title {
-    color: #131313;
-    font-size: 3rem;
-    font-weight: 700;
-    line-height: normal;
-}
+
 nav> ul{
     display: flex;
 }
@@ -117,7 +117,37 @@ main{
     font-weight: 1rem;
     width: 500px;
 }
-
+/* =================
+facts-style
+==================== */
+.facts-description{
+    color: #727272;
+    font-size: 16px;
+    font-weight: 1rem;
+    width: 500px;
+}
+.facts-card-container{
+    display: flex;
+    justify-content: space-around;
+}
+.facts-card-container .card{
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    padding: 40px;
+}
+.facts-card-container .card-stats{
+    font-size: 2.8rem;
+    color: #424242;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.facts-card-container .card-title{
+    color: var(--dark-03, #727272);
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 5px;
+}
 
 
 /* ====================
@@ -134,6 +164,10 @@ Responsive for mobile
     }
     .team-image-container{
         grid-template-columns: 1fr;
+    }
+    .team-content{
+        padding-right: 20px;
+        padding-left:20px;  
     }
 }
 
